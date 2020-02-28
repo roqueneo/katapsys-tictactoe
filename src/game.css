@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #ccc;
+    border-radius: 10px;
+    transition: all .3s ease-out;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
